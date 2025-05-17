@@ -1,0 +1,252 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #1e272e; /* Primary Dark Background */
+  color: #ecf0f1; /* Light Text */
+  line-height: 1.7;
+  padding-top: 70px; /* Adjust if navbar height changes */
+}
+
+a {
+  color: #58D68D; /* Secondary Accent (Lighter Green) for links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #2ecc71; /* Brighter Green for hover */
+  text-decoration: none;
+}
+
+.section-title {
+  font-weight: 700;
+  color: #ecf0f1; /* Light Text */
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: #2ecc71; /* Primary Accent (Bright Green) */
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: rgba(44, 58, 71, 0.9); /* Dark Grey with transparency */
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.navbar-brand {
+  color: #ecf0f1 !important; /* Light Text */
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  color: #bdc3c7 !important; /* Subtle Light Text */
+  font-weight: 600;
+  margin-left: 15px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #58D68D !important; /* Lighter Green for active/hover nav links */
+}
+
+.navbar-toggler {
+  border-color: rgba(236, 240, 241, 0.5); /* Light border */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(236, 240, 241, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); /* Light icon */
+}
+
+
+/* Hero Section */
+.hero-section {
+  min-height: 100vh;
+  background: linear-gradient(rgba(30, 39, 46, 0.85), rgba(44, 58, 71, 0.95)), url('your-cool-background-image.jpg') no-repeat center center/cover;
+  /* Replace 'your-cool-background-image.jpg' or remove if not using */
+  /* If no image, use: background-color: #1e272e; (Primary Dark Background) */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ecf0f1; /* Light Text */
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #bdc3c7; /* Subtle Light text */
+  margin-bottom: 2rem;
+}
+
+.btn-cta {
+  background-color: #2ecc71; /* Primary Accent (Bright Green) */
+  color: #1e272e; /* Dark text for contrast on bright green */
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border: none;
+}
+
+.btn-cta:hover {
+  background-color: #27ae60; /* Darker Green */
+  color: #1e272e;
+  transform: translateY(-3px);
+}
+
+
+/* Profile Intro Section */
+.profile-intro-section {
+  background-color: #2c3a47; /* Dark Section Background */
+}
+.profile-photo {
+  max-width: 250px;
+  border-radius: 50%;
+  border: 5px solid #58D68D; /* Secondary Accent (Lighter Green) for border */
+  box-shadow: 0 0 20px rgba(88, 214, 141, 0.4); /* Lighter Green shadow */
+}
+.lead-text {
+    font-size: 1.2rem;
+    color: #ecf0f1; /* Light Text */
+}
+.sub-text {
+    font-size: 1rem;
+    color: #bdc3c7; /* Subtle Light Text */
+}
+
+
+/* About Me Section */
+.about-me-section {
+  background-color: #1e272e; /* Primary Dark Background */
+}
+.about-me-section p {
+  font-size: 1.1rem;
+  color: #bdc3c7; /* Subtle Light Text */
+  margin-bottom: 1.5rem;
+}
+.about-me-section p strong {
+    color: #ecf0f1; /* Light Text */
+}
+
+/* Achievements Section */
+.achievements-section {
+  background-color: #2c3a47; /* Dark Section Background */
+}
+
+.achievement-card {
+  background-color: #1e272e; /* Primary Dark Background */
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Darker shadow on dark bg */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  border-left: 5px solid #2ecc71; /* Bright Green accent border */
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(88, 214, 141, 0.3); /* Lighter Green shadow on hover */
+}
+
+.achievement-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #58D68D; /* Secondary Accent (Lighter Green) for title */
+  margin-bottom: 0.75rem;
+}
+
+.achievement-detail {
+  font-size: 1rem;
+  color: #bdc3c7; /* Subtle Light Text */
+}
+.stay-tuned {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #bdc3c7; /* Subtle Light Text */
+}
+
+/* Contact Footer */
+.contact-footer {
+  background-color: #151c21; /* Even darker for footer */
+  color: #bdc3c7; /* Subtle Light Text */
+}
+
+.footer-link {
+  color: #bdc3c7;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #58D68D; /* Lighter Green on hover */
+}
+
+.contact-info .footer-link,
+.social-links .footer-link {
+    margin-bottom: 0.5rem;
+}
+.copyright-text {
+    font-size: 0.9rem;
+    color: #95a5a6; /* Slightly desaturated light grey */
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    background-color: #2c3a47; /* Dark Section Background for collapsed menu */
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  body {
+      padding-top: 60px;
+  }
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  .profile-photo {
+      max-width: 180px;
+  }
+  .section-title {
+      font-size: 1.8rem;
+  }
+  .achievement-card {
+      margin-bottom: 20px;
+  }
+  .contact-footer .d-flex {
+      text-align: center;
+  }
+  .social-links a {
+      margin-right: 10px !important;
+  }
+  .social-links a:last-child {
+      margin-right: 0 !important;
+  }
+}

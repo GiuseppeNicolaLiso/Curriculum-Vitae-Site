@@ -1,0 +1,255 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #FFFFFF; /* Primary Background (White) */
+  color: #2F4F4F; /* Main Text (Dark Slate Gray) */
+  line-height: 1.7;
+  padding-top: 70px; /* Adjust if navbar height changes */
+}
+
+a {
+  color: #ADD8E6; /* Secondary Accent (Light Blue) for links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #87CEEB; /* Sky Blue for hover (or a darker light blue like #7AC5CD - MediumAquamarine) */
+  text-decoration: none;
+}
+
+.section-title {
+  font-weight: 700;
+  color: #2F4F4F; /* Main Text */
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: #87CEEB; /* Primary Accent (Sky Blue) */
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: rgba(240, 248, 255, 0.9); /* Very Light Blue (AliceBlue) with transparency */
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.navbar-brand {
+  color: #2F4F4F !important; /* Main Text */
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  color: #465757 !important; /* Darker Subtle Text */
+  font-weight: 600;
+  margin-left: 15px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #87CEEB !important; /* Sky Blue for active/hover nav links */
+}
+
+.navbar-toggler {
+  border-color: rgba(47, 79, 79, 0.3); /* Dark Slate Gray border, less opaque */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(47, 79, 79, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); /* Dark Slate Gray icon */
+}
+
+
+/* Hero Section */
+.hero-section {
+  min-height: 100vh;
+  /* Option 1: Light overlay if using background image */
+  background: linear-gradient(rgba(240, 248, 255, 0.7), rgba(220, 235, 250, 0.8)), url('your-cool-background-image.jpg') no-repeat center center/cover;
+  /* Replace 'your-cool-background-image.jpg' */
+  /* Option 2: If no image, use a very light blue background */
+  /* background-color: #E0F0FF; /* Very Light Blue */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2F4F4F; /* Main Text */
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #778899; /* Subtle text (Light Slate Gray) */
+  margin-bottom: 2rem;
+}
+
+.btn-cta {
+  background-color: #87CEEB; /* Primary Accent (Sky Blue) */
+  color: #2F4F4F; /* Dark text for light blue button */
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border: none;
+}
+
+.btn-cta:hover {
+  background-color: #7AC5CD; /* Medium Aquamarine (slightly darker light blue) */
+  color: #2F4F4F;
+  transform: translateY(-3px);
+}
+
+
+/* Profile Intro Section */
+.profile-intro-section {
+  background-color: #F0F8FF; /* Very Light Blue/Off-White (AliceBlue) */
+}
+.profile-photo {
+  max-width: 250px;
+  border-radius: 50%;
+  border: 5px solid #ADD8E6; /* Secondary Accent (Light Blue) for border */
+  box-shadow: 0 0 20px rgba(173, 216, 230, 0.4); /* Light Blue shadow */
+}
+.lead-text {
+    font-size: 1.2rem;
+    color: #2F4F4F; /* Main Text */
+}
+.sub-text {
+    font-size: 1rem;
+    color: #778899; /* Subtle Text (Light Slate Gray) */
+}
+
+
+/* About Me Section */
+.about-me-section {
+  background-color: #FFFFFF; /* White Background */
+}
+.about-me-section p {
+  font-size: 1.1rem;
+  color: #778899; /* Subtle Text (Light Slate Gray) */
+  margin-bottom: 1.5rem;
+}
+.about-me-section p strong {
+    color: #2F4F4F; /* Main Text */
+}
+
+/* Achievements Section */
+.achievements-section {
+  background-color: #F0F8FF; /* Very Light Blue/Off-White (AliceBlue) */
+}
+
+.achievement-card {
+  background-color: #FFFFFF; /* White Background */
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%; /* For equal height cards in a row */
+  border-left: 5px solid #87CEEB; /* Sky Blue accent border */
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(173, 216, 230, 0.3); /* Light Blue shadow on hover */
+}
+
+.achievement-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ADD8E6; /* Secondary Accent (Light Blue) for title */
+  margin-bottom: 0.75rem;
+}
+
+.achievement-detail {
+  font-size: 1rem;
+  color: #778899; /* Subtle Text (Light Slate Gray) */
+}
+.stay-tuned {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #778899; /* Subtle Text */
+}
+
+/* Contact Footer */
+.contact-footer {
+  background-color: #E6F2FF; /* Lighter version of AliceBlue for footer */
+  color: #465757; /* Darker Subtle Text */
+}
+
+.footer-link {
+  color: #465757;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #87CEEB; /* Sky Blue on hover */
+}
+
+.contact-info .footer-link,
+.social-links .footer-link {
+    margin-bottom: 0.5rem;
+}
+.copyright-text {
+    font-size: 0.9rem;
+    color: #778899; /* Light Slate Gray */
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    background-color: #FFFFFF; /* White for collapsed menu */
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+}
+
+@media (max-width: 767.98px) {
+  body {
+      padding-top: 60px;
+  }
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  .profile-photo {
+      max-width: 180px;
+  }
+  .section-title {
+      font-size: 1.8rem;
+  }
+  .achievement-card {
+      margin-bottom: 20px;
+  }
+  .contact-footer .d-flex {
+      text-align: center;
+  }
+  .social-links a {
+      margin-right: 10px !important;
+  }
+  .social-links a:last-child {
+      margin-right: 0 !important;
+  }
+}

@@ -1,0 +1,252 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #212529; /* Primary Dark Grey/Charcoal Background */
+  color: #f8f9fa; /* Light Text */
+  line-height: 1.7;
+  padding-top: 70px; /* Adjust if navbar height changes */
+}
+
+a {
+  color: #20c997; /* Secondary Accent (Lighter Info Blue/Teal) for links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #17a2b8; /* Darker Info Blue for hover */
+  text-decoration: none;
+}
+
+.section-title {
+  font-weight: 700;
+  color: #f8f9fa; /* Light Text */
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: #0d6efd; /* Primary Accent (Bright Blue) */
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: rgba(33, 37, 41, 0.9); /* Very Dark Grey with transparency */
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.navbar-brand {
+  color: #f8f9fa !important; /* Light Text */
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  color: #adb5bd !important; /* Subtle Light Text */
+  font-weight: 600;
+  margin-left: 15px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #20c997 !important; /* Lighter Info Blue for active/hover nav links */
+}
+
+.navbar-toggler {
+  border-color: rgba(248, 249, 250, 0.5); /* Light border */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(248, 249, 250, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); /* Light icon */
+}
+
+
+/* Hero Section */
+.hero-section {
+  min-height: 100vh;
+  background: linear-gradient(rgba(33, 37, 41, 0.85), rgba(52, 58, 64, 0.95)), url('your-cool-background-image.jpg') no-repeat center center/cover;
+  /* Replace 'your-cool-background-image.jpg' or remove if not using */
+  /* If no image, use: background-color: #212529; (Primary Dark Grey Background) */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f8f9fa; /* Light Text */
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #adb5bd; /* Subtle Light text */
+  margin-bottom: 2rem;
+}
+
+.btn-cta {
+  background-color: #0d6efd; /* Primary Accent (Bright Blue) */
+  color: #fff;
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border: none;
+}
+
+.btn-cta:hover {
+  background-color: #0b5ed7; /* Darker Bright Blue */
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+
+/* Profile Intro Section */
+.profile-intro-section {
+  background-color: #343a40; /* Dark Grey Section Background */
+}
+.profile-photo {
+  max-width: 250px;
+  border-radius: 50%;
+  border: 5px solid #20c997; /* Secondary Accent (Lighter Info Blue) for border */
+  box-shadow: 0 0 20px rgba(32, 201, 151, 0.3); /* Lighter Info Blue shadow */
+}
+.lead-text {
+    font-size: 1.2rem;
+    color: #f8f9fa; /* Light Text */
+}
+.sub-text {
+    font-size: 1rem;
+    color: #adb5bd; /* Subtle Light Text */
+}
+
+
+/* About Me Section */
+.about-me-section {
+  background-color: #212529; /* Primary Dark Grey Background */
+}
+.about-me-section p {
+  font-size: 1.1rem;
+  color: #adb5bd; /* Subtle Light Text */
+  margin-bottom: 1.5rem;
+}
+.about-me-section p strong {
+    color: #f8f9fa; /* Light Text */
+}
+
+/* Achievements Section */
+.achievements-section {
+  background-color: #343a40; /* Dark Grey Section Background */
+}
+
+.achievement-card {
+  background-color: #212529; /* Primary Dark Grey Background */
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  border-left: 5px solid #0d6efd; /* Bright Blue accent border */
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(32, 201, 151, 0.25); /* Lighter Info Blue shadow on hover */
+}
+
+.achievement-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #20c997; /* Secondary Accent (Lighter Info Blue) for title */
+  margin-bottom: 0.75rem;
+}
+
+.achievement-detail {
+  font-size: 1rem;
+  color: #adb5bd; /* Subtle Light Text */
+}
+.stay-tuned {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #adb5bd; /* Subtle Light Text */
+}
+
+/* Contact Footer */
+.contact-footer {
+  background-color: #1a1d20; /* Even darker Grey for footer */
+  color: #adb5bd; /* Subtle Light Text */
+}
+
+.footer-link {
+  color: #adb5bd;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #20c997; /* Lighter Info Blue on hover */
+}
+
+.contact-info .footer-link,
+.social-links .footer-link {
+    margin-bottom: 0.5rem;
+}
+.copyright-text {
+    font-size: 0.9rem;
+    color: #6c757d; /* Slightly desaturated medium grey */
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    background-color: #343a40; /* Dark Grey Section Background for collapsed menu */
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  body {
+      padding-top: 60px;
+  }
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  .profile-photo {
+      max-width: 180px;
+  }
+  .section-title {
+      font-size: 1.8rem;
+  }
+  .achievement-card {
+      margin-bottom: 20px;
+  }
+  .contact-footer .d-flex {
+      text-align: center;
+  }
+  .social-links a {
+      margin-right: 10px !important;
+  }
+  .social-links a:last-child {
+      margin-right: 0 !important;
+  }
+}
