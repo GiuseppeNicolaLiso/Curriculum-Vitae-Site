@@ -150,6 +150,50 @@ a:hover {
     color: #2F4F4F; /* Main Text */
 }
 
+
+/* About Me Section */
+.about-me-section {
+    position: relative; /* Necessario per posizionare lo pseudo-elemento */
+    background-color: #FFFFFF; /* Manteniamo un colore di base, l'immagine andrà sotto */
+    overflow: hidden; /* Assicura che l'immagine non fuoriesca */
+    /* Le tue altre proprietà per la sezione About Me */
+    padding-top: 5rem; /* Assicurati ci sia spazio per il contenuto */
+    padding-bottom: 5rem;
+}
+
+.about-me-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('images/data.jpg'); /* Assicurati che il percorso sia corretto */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter: blur(8px); /* Regola il valore (8px) per l'intensità della sfocatura */
+    z-index: -1; /* Mette lo sfondo dietro il contenuto */
+    /* Opzionale: Aggiungi un overlay semi-trasparente per migliorare la leggibilità del testo */
+     background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('images/data.jpg') no-repeat center center/cover;
+     filter: blur(8px); /* Applica di nuovo il blur anche con l'overlay */
+}
+
+/* Se hai regole per il testo all'interno di questa sezione, assicurati che abbiano un colore che contrasti bene con l'overlay */
+.about-me-section p {
+    font-size: 1.1rem;
+    color: #2F4F4F; /* Colore testo scuro per contrastare l'overlay bianco */
+    margin-bottom: 1.5rem;
+    position: relative; /* Potrebbe essere utile se hai problemi di z-index con il testo */
+    z-index: 1; /* Assicura che il testo sia sopra lo sfondo */
+}
+
+.about-me-section h2 {
+    color: #2F4F4F; /* Colore titolo scuro */
+    position: relative;
+    z-index: 1;
+}
+
 /* Achievements Section */
 .achievements-section {
   background-color: #F0F8FF; /* Very Light Blue/Off-White (AliceBlue) */
